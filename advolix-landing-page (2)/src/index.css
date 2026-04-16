@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  --color-background: #050505;
+  --color-surface: #111111;
+  --color-surface-hover: #1a1a1a;
+  --color-primary: #00f2ff;
+  --color-primary-dark: #00d9e6;
+  --color-gold: #00f2ff;
+  --color-text: #ffffff;
+  --color-text-muted: #999999;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.glass-panel {
+  background: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neon-glow {
+  box-shadow: none;
+}
+
+.neon-glow:hover {
+  box-shadow: none;
+}
+
+.gold-glow {
+  box-shadow: none;
+}
+
+.text-gradient {
+  background: none;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentcolor;
+  background-clip: border-box;
+  color: var(--color-text);
+}
+
+.text-gradient-primary {
+  background: none;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentcolor;
+  background-clip: border-box;
+  color: var(--color-primary);
+}
+
+.text-gradient-gold {
+  background: none;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentcolor;
+  background-clip: border-box;
+  color: var(--color-primary);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
